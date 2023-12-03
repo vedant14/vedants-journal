@@ -3,19 +3,19 @@ import React from "react";
 import { getNoteData } from "../../utils/notes";
 import ReactMarkdown from "react-markdown";
 import Link from "next/link";
+import { Divider } from "../../components/Divider";
+import { TagPill } from "../../components/TagPill";
+import { TagsAndDate } from "../../components/TagsAndDate";
 
 function Note({ note }) {
-  const tagsArray = note.tag?.split(",");
   return (
     <div>
-      {tagsArray?.map((tag, i) => (
-        <div key={i}>
-          <Link href={`/tags/${tag}`}>{tag}</Link>
-        </div>
-      ))}
-      <h1 className="text-xl">{note.title}</h1>
-      <p>{note.date}</p>
-      <ReactMarkdown>{note.content}</ReactMarkdown>
+      <p className="text-xl my-4 font-medium">{note.title}</p>
+      <TagsAndDate date={note.date} tagData={note.tag} />
+      <Divider />
+      <article className="prose mt-8">
+        <ReactMarkdown>{note.content}</ReactMarkdown>
+      </article>
     </div>
   );
 }

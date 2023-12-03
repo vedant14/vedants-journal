@@ -4,6 +4,7 @@ import { useRouter } from "next/router";
 import { getNoteData } from "../../utils/notes";
 import Link from "next/link";
 import { BlogTitle } from "../../components/BlogTitle";
+import { TagPill } from "../../components/TagPill";
 
 function NotesByTag({ notes }) {
   const router = useRouter();
@@ -15,7 +16,9 @@ function NotesByTag({ notes }) {
 
   return (
     <div>
-      <p className="mb-8">Notes with Tag: {tag}</p>
+      <div className="flex space-x-2 items-center">
+        <div className="">Notes with Tag: </div> <TagPill tag={tag} />
+      </div>
       <ul>
         {notes.map((note, i) => (
           <div key={i}>

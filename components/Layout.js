@@ -3,7 +3,7 @@ import menuData from "../data/menu.json";
 import { useRouter } from "next/router";
 export function Layout({ children }) {
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lowercase">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <div className="max-w-3xl mx-auto">
         <Nav />
         {children}
@@ -20,7 +20,7 @@ function Nav() {
   }
 
   return (
-    <div className="flex justify-between mb-12">
+    <div className="flex justify-between mb-12 lowercase">
       <div className={router.pathname === "/" ? "underline ease-in" : ""}>
         <Link href="/">Vedant Lohbare</Link>
       </div>
