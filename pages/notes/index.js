@@ -1,12 +1,13 @@
 // pages/index.js
 import React from "react";
-import Link from "next/link";
 import { getNoteData } from "../../utils/notes";
 import { BlogTitle } from "../../components/BlogTitle";
+import { Divider } from "../../components/Divider";
 
 export default function Notes({ notes }) {
   return (
     <div>
+      <Divider text="My notes" />
       <ul>
         {notes.map((note, i) => (
           <div key={i}>

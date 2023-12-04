@@ -6,7 +6,8 @@ import { Divider } from "../components/Divider";
 export default function Home() {
   return (
     <div>
-      <div className="text-lg space-y-4 mb-12">
+      <Divider text="welcome" />
+      <div className="text-lg space-y-4">
         <p className="text-xl">Hey, my name is Vedant :)</p>
         <p>
           👋 I’m a <span className="line-through">cyclist,</span> product
@@ -29,7 +30,7 @@ export default function Home() {
       </div>
       <Divider text="among other things" />
       <div>
-        <div className="space-y-4  mb-12">
+        <div className="space-y-4">
           <p className="text-xl "> Some things I am proud of </p>
           <ul role="list" className="text-lg space-y-4 list-none dashed">
             <li>

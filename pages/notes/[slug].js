@@ -2,9 +2,7 @@
 import React from "react";
 import { getNoteData } from "../../utils/notes";
 import ReactMarkdown from "react-markdown";
-import Link from "next/link";
-import { Divider, Dividerwithbutton } from "../../components/Divider";
-import { TagPill } from "../../components/TagPill";
+import { Dividerwithbutton } from "../../components/Divider";
 import { TagsAndDate } from "../../components/TagsAndDate";
 
 function Note({ note }) {
@@ -13,7 +11,7 @@ function Note({ note }) {
       <p className="text-xl my-4 font-medium">{note.title}</p>
       <TagsAndDate date={note.date} tagData={note.tag} />
       <Dividerwithbutton />
-      <article className="prose mt-8">
+      <article className="prose">
         <ReactMarkdown>{note.content}</ReactMarkdown>
       </article>
     </div>
