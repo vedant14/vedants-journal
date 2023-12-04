@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Tiny Tea Kettle",
+    "state": "Not active :(",
+    "link": "https://tiny-tea-kettle.vercel.app/",
+    "whatItIs": "Tea company",
+    "highlights": [
+      "Nothing to add as of now. Dad got pretty excited about this one though."
+    ]
+  },
+  {
+    "name": "SuperDMs",
+    "state": "Not active :(",
+    "link": "https://www.superdms.app/",
+    "whatItIs": "Tool to automate stuff on twitter",
+    "highlights": [
+      "First internet money :)",
+      "First team project too, made good friends :)",
+      "Proper SaaS tool where I wrote code alongside an experienced dev, so I am proud of this one"
+    ]
+  },
+  {
+    "name": "Better Product Manager",
+    "state": "Not updated",
+    "link": "https://betterproductmanager.vercel.app/",
+    "whatItIs": "Initially created to fight my own imposter syndrome. Better Product Manager has been featured on Product Hunt and gets 1000+ visitors each month",
+    "highlights": [
+      "Loved working on this one, was my first project which got over a 5000 views",
+      "Finalist for 'Side-project product of the year' at Product Hunt."
+    ]
+  },
+  {
+    "name": "How many BMWs",
+    "state": "Not updated",
+    "link": "https://howmanybmws.netlify.app/",
+    "whatItIs": "Created a fun application to show the trend of rising tech salaries in India, using a BMW bikes.",
+    "highlights": [
+      "#5 product of the day at Product Hunt",
+      "A few of the people I follow on twitter retweeted this, so that made my day :)"
+    ]
+  },
+  {
+    "name": "Particypants",
+    "state": "Not active",
+    "link": "https://www.particypants.com/",
+    "whatItIs": "Slack application that helps teams take meeting notes.",
+    "highlights": [
+      "First tech intensive product, played with Slack APIs and learned a lot about them in the process",
+      "Conducted usability tests on the MVP with ~10 teams, the product was not sticky enough so like a good product manager, decided to kill it :("
+    ]
+  }
+]

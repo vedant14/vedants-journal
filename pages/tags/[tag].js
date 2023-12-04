@@ -5,6 +5,7 @@ import { getNoteData } from "../../utils/notes";
 import Link from "next/link";
 import { BlogTitle } from "../../components/BlogTitle";
 import { TagPill } from "../../components/TagPill";
+import { Dividerwithbutton } from "../../components/Divider";
 
 function NotesByTag({ notes }) {
   const router = useRouter();
@@ -16,9 +17,10 @@ function NotesByTag({ notes }) {
 
   return (
     <div>
-      <div className="flex space-x-2 items-center">
-        <div className="">Notes with Tag: </div> <TagPill tag={tag} />
-      </div>
+      <Dividerwithbutton
+        text={`Notes with tag: ${tag}`}
+        buttonText="clear tag filter"
+      />
       <ul>
         {notes.map((note, i) => (
           <div key={i}>

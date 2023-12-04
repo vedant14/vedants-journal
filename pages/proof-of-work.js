@@ -1,3 +1,3 @@
 export default function POW() {
-  return <div>vedant</div>;
+  return <div>WIP</div>;
 }
