@@ -1,9 +1,11 @@
 import { Divider, Dividerwithbutton } from "../components/Divider";
+import { SEO } from "../components/SEO";
 import data from "../data/side-projects.json";
 
 export default function SideProjects() {
   return (
     <div>
+      <SEO title="Side-Projects" />
       <Dividerwithbutton
         text="My Side Projects"
         buttonText="read updates on side-projects"

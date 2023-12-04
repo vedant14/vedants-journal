@@ -4,10 +4,12 @@ import { getNoteData } from "../../utils/notes";
 import ReactMarkdown from "react-markdown";
 import { Dividerwithbutton } from "../../components/Divider";
 import { TagsAndDate } from "../../components/TagsAndDate";
+import { SEO } from "../../components/SEO";
 
 function Note({ note }) {
   return (
     <div>
+      <SEO title={note.title} description={note.description} />
       <p className="text-xl my-4 font-medium">{note.title}</p>
       <TagsAndDate date={note.date} tagData={note.tag} />
       <Dividerwithbutton />

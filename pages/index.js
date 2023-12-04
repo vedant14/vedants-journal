@@ -2,14 +2,16 @@
 import Link from "next/link";
 import React from "react";
 import { Divider } from "../components/Divider";
+import { SEO } from "../components/SEO";
 export const metadata = {
   title: "Vedant Lohbare",
-  description: "Ved",
+  description: "This is my personal site",
 };
 
 export default function Home() {
   return (
     <div>
+      <SEO />
       <Divider text="welcome" />
       <div className="text-lg space-y-4">
         <p className="text-xl">Hey, my name is Vedant :)</p>

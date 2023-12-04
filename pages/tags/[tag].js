@@ -4,6 +4,7 @@ import { useRouter } from "next/router";
 import { getNoteData } from "../../utils/notes";
 import { BlogTitle } from "../../components/BlogTitle";
 import { Dividerwithbutton } from "../../components/Divider";
+import { SEO } from "../../components/SEO";
 
 function NotesByTag({ notes }) {
   const router = useRouter();
@@ -15,6 +16,7 @@ function NotesByTag({ notes }) {
 
   return (
     <div>
+      <SEO title={`Notes with tag: ${tag}`} />
       <Dividerwithbutton
         text={`Notes with tag: ${tag}`}
         buttonText="clear tag filter"
