@@ -2,6 +2,10 @@
 import Link from "next/link";
 import React from "react";
 import { Divider } from "../components/Divider";
+export const metadata = {
+  title: "Vedant Lohbare",
+  description: "Ved",
+};
 
 export default function Home() {
   return (
