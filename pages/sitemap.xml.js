@@ -1,26 +1,27 @@
+import { format } from "date-fns";
 const EXTERNAL_DATA_URL = "https://www.vedantlohbare.com/notes";
 const API_DATA_URL = "https://www.vedantlohbare.com/api/get-notes";
 function generateSiteMap(posts) {
+  const manualURLs = [
+    "https://www.vedantlohbare.com",
+    "https://www.vedantlohbare.com/side-projects",
+    "https://www.vedantlohbare.com/proof-of-work",
+  ];
+  const postURLs = posts.map((slug) => `${EXTERNAL_DATA_URL}/${slug}`);
+  const allURLs = [...manualURLs, ...postURLs];
   return `<?xml version="1.0" encoding="UTF-8"?>
-   <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-     <!--We manually set the two URLs we know already-->
+  <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    ${allURLs
+      .map((url) => {
+        return `
      <url>
-       <loc>https://www.vedantlohbare.com</loc>
+       <loc>${url}</loc>
+       <lastmod>${format(new Date(), "yyyy-MM-dd")}</lastmod>
      </url>
-     <url>
-       <loc>https://www.vedantlohbare.com/side-projects</loc>
-     </url>
-     ${posts
-       .map(({ slug }) => {
-         return `
-       <url>
-           <loc>${`${EXTERNAL_DATA_URL}/${slug}`}</loc>
-       </url>
-     `;
-       })
-       .join("")}
-   </urlset>
- `;
+   `;
+      })
+      .join("")}
+  </urlset>`;
 }
 
 function SiteMap() {

@@ -2,9 +2,7 @@
 import React from "react";
 import { useRouter } from "next/router";
 import { getNoteData } from "../../utils/notes";
-import Link from "next/link";
 import { BlogTitle } from "../../components/BlogTitle";
-import { TagPill } from "../../components/TagPill";
 import { Dividerwithbutton } from "../../components/Divider";
 
 function NotesByTag({ notes }) {
