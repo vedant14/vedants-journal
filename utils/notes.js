@@ -1,14 +1,14 @@
-// utils/notes.js
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 
-const notesDirectory = path.join(process.cwd(), "notes");
+const notesDirectory = path.join(process.cwd(), "journal");
 
-export function getNoteData(tag = null) {
+export function getNoteData() {
   const fileNames = fs.readdirSync(notesDirectory);
 
   const notesData = fileNames
+    .filter((fileName) => fileName.endsWith(".md")) // Only pick up .md files
     .map((fileName) => {
       const fullPath = path.join(notesDirectory, fileName);
       const fileContents = fs.readFileSync(fullPath, "utf8");
@@ -22,11 +22,6 @@ export function getNoteData(tag = null) {
     })
     .filter((note) => note.date && note.title && note.slug)
     .sort((a, b) => new Date(b.date) - new Date(a.date));
-
-  if (tag) {
-    // Filter notes by the specified tag
-    return notesData.filter((note) => note.tag && note.tag.includes(tag));
-  }
 
   return notesData;
 }
