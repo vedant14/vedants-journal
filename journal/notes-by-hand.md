@@ -1,6 +1,6 @@
 ---
 title: Meeting notes by hand
-date: 2021/7/19
+date: 2021-07-19
 slug: writing-by-hand
 description: I never start a meeting without a pen in my hand
 tag: writing

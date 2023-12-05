@@ -1,6 +1,6 @@
 ---
 title: What Paras Chopra taught me
-date: 2021/4/20
+date: 2021-04-20
 slug: writing-is-thinking
 description: Writing is thinking and I want to journal more
 tag: writing

@@ -1,6 +1,6 @@
 ---
 title: Sprint-4
-date: 2022/8/21
+date: 2022-08-21
 slug: sprint-4
 description: Tasks for the sprint
 tag: sprints

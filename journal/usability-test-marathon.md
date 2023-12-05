@@ -1,6 +1,6 @@
 ---
 title: Doing 25 usability tests in a week
-date: 2021/6/16
+date: 2021-06-16
 slug: doing-25-usability-tests-in-a-week
 description: We had recently launched our new app and were eager to see it in the wild
 tag: product-management, work

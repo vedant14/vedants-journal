@@ -1,6 +1,6 @@
 ---
 title: Be lose with appreciations
-date: 2021/4/29
+date: 2021-04-29
 description: I find it difficult sometimes to appreciate people in a workplace for a personal priority.
 tag: product-management
 slug: be-lose-with-appreciation

@@ -1,6 +1,6 @@
 ---
 title: Successful people I look up to
-date: 2022/4/15
+date: 2022-04-15
 slug: people-i-look-up-to
 description: I have struggling with thoughts of failure lately
 tag: mental-models

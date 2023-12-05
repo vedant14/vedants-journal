@@ -1,7 +1,7 @@
 ---
 title: Salary score-board
 slug: salary-score-board
-date: 2022/4/14
+date: 2022-04-14
 description: Tech salaries are hirings dizzying at the moment
 tag: rants
 ---

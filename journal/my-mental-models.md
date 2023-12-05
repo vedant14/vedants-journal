@@ -1,6 +1,6 @@
 ---
 title: My mental models
-date: 2022/5/25
+date: 2022-05-25
 description: The various mental models I apply or want to apply in my life
 tag: mental-model
 slug: my-mental-models

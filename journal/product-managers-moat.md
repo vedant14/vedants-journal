@@ -1,6 +1,6 @@
 ---
 title: What is a Product manager's moat?
-date: 2023/5/17
+date: 2023-05-17
 slug: what-is-my-moat
 description: I have always wondered this about my job before. Lately, I've started thinking of it in this context.
 tag: product-management, work

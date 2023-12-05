@@ -9,7 +9,6 @@ import { SEO } from "../../components/SEO";
 function NotesByTag({ notes }) {
   const router = useRouter();
   const { tag } = router.query;
-  console.log(tag);
   if (!notes) {
     return <p>Loading...</p>;
   }
