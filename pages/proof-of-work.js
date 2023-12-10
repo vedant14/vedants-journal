@@ -6,11 +6,17 @@ export default function POW() {
     <div>
       <SEO title="Proof-of-work" />
       <Dividerwithbutton
-        text="Proof of work"
+        text="last updated Dec,2023"
         buttonText="read updates on work"
         url="tags/work"
       />
-      <p className="">Page is WIP</p>
+      <ul className="flex justify-between">
+        <li>Homzhub</li>
+        <li>Razorpay</li>
+        <li>zero-to-one</li>
+        <li>one-to-ten</li>
+        <li>ten-to-infinity</li>
+      </ul>
     </div>
   );
 }

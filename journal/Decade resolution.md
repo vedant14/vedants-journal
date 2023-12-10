@@ -19,8 +19,8 @@ I was preparing for my board exams, thinking of how puberty hit me and well not 
 - Moved back to my hometown and joined another engineering college.  
 - Spent my first year stupidly wasting. Spent my second year wasting too, and yep fell for a girl in my class – third mistake. You can probably see a pattern here. I also started playing football regularly this time around, starting to lose the pounds I had gained all these years since the decade started.
 
-_Third-year – 2015 already. Half a decade is gone.  
-_I joined Make A Difference- an NGO, I probably speak too much about MAD but that’s probably only because the amount of impact it had on me.
+*Third-year – 2015 already. Half a decade is gone.*  
+*I joined Make A Difference- an NGO, I probably speak too much about MAD but that’s probably only because the amount of impact it had on me.*
 
 In 2015, I also made a lot of great friends. I still am talking to one of them as I’m typing this.  
 I started teaching as a volunteer in MAD, just barely starting to get out my shell. Started reading books seriously at this point too. Before this period I had hardly read books.
@@ -48,7 +48,7 @@ I joined a company that sold insurance. At that time, I felt that was beneath me
 Later I joined a logistics company and went there for a week. Not seeing how this job can help me, I started to look for a better job.  
 Like they say, third time’s the charm. I found Homzhub through LinkedIn, a prop-tech startup. So, I scheduled an interview with the founder of the company. I finished my workday early and met with him at his office. A home really, with two developers sitting at one end figuring some coding stuff I guess. Not ideal start. But after my conversation with Harish, the founder, I knew this was really a no-brainer.
 
-I joined homzhub in the summer of 2017 and then rest is a bit of long story for this blog. But after MAD, Homzhub was the organisation that has taught me some of the most important things about life.
+I joined Homzhub in the summer of 2017 and then rest is a bit of long story for this blog. But after MAD, Homzhub was the organisation that has taught me some of the most important things about life.
 
 At the end of 2017, I also appeared for CAT again. I received interview calls from the best B-schools this time. But I decided that my time at Homzhub would teach me a lot more than an MBA education, at least at that point in my life.
 
@@ -65,13 +65,13 @@ A few highlights from this year –
 - I started cycling – a sport I would like to continue for a long time
 - I took my first steps towards learning to code – something that should have been done a long time ago
 - I moved to a more product and marketing related role – leaving operations
-- I did Vipassana – more on this too
+- I did Vipassana – ~~more on this too~~
 - I took up a side job as a teacher to other CAT students
 - I also moved to Pune – if you’ve been reading carefully, I ran away from this city at the start of the decade.
 - Made investments in the market
 - Bought a MacBook
 - Had an operation
-- Fell in love?
+- Fell in love.
 
 So a lot happened this year, But I am only getting started.
 
@@ -83,7 +83,7 @@ So a lot happened this year, But I am only getting started.
 - Build a few good apps – side projects
 - Work on improving my mental and emotional self
 - Become independent – I mean at 34 obviously.
-- Get married, start a family.
+- Get married, ~~start a family.~~
 - Solidify my relationship with my family and all my friends.
 - Write a book
 - Speak at events – share knowledge/ gain respect
