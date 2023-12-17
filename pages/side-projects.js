@@ -1,4 +1,4 @@
-import { Divider, Dividerwithbutton } from "../components/Divider";
+import { Dividerwithbutton } from "../components/Divider";
 import { SEO } from "../components/SEO";
 import data from "../data/side-projects.json";
 
