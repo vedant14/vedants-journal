@@ -1,16 +1,23 @@
 [
   {
-    "goal": "Vedant",
+    "goal": "Earn 30K per month from a side-hustle",
     "theme": "Side-Projects",
-    "whyThis": "Vedant is goaling",
+    "whyThis": "Want to learn how to earn money off the internet.",
+    "percentCompleted": "0%",
+    "status": "starting"
+  },
+  {
+    "goal": "Reduce body fat % to 15%",
+    "theme": "health",
+    "whyThis": "Fat kid, want to not be the same",
     "percentCompleted": "80%",
     "status": "on-track"
   },
   {
-    "goal": "Vedant",
-    "theme": "Side-Projects",
-    "whyThis": "Vedant is goaling",
-    "percentCompleted": "80%",
+    "goal": "Control ADHD:/",
+    "theme": "Mind",
+    "whyThis": "I am never not working, always in the moment",
+    "percentCompleted": "20%",
     "status": "on-track"
   }
 ]
