@@ -3,7 +3,6 @@ import { Divider } from "../components/Divider";
 import goals from "../data/sprint-goals.json";
 import { classNames } from "../utils/lib";
 export default function Sprints() {
-  console.log(goals);
   return (
     <div>
       <Divider text="My Sprint Goals" />

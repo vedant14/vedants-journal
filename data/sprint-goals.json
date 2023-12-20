@@ -1,7 +1,7 @@
 [
   {
     "goal": "Earn 30K per month from a side-hustle",
-    "theme": "Side-Projects",
+    "theme": "FI",
     "whyThis": "Want to learn how to earn money off the internet.",
     "percentCompleted": "0%",
     "status": "starting"
@@ -19,5 +19,12 @@
     "whyThis": "I am never not working, always in the moment",
     "percentCompleted": "20%",
     "status": "on-track"
+  },
+  {
+    "goal": "Earn 70k regularly on freelance",
+    "theme": "FI",
+    "whyThis": "If I can create a community can explore these avenues to get more ideas for a product",
+    "percentCompleted": "0%",
+    "status": "starting"
   }
 ]

@@ -2,7 +2,6 @@ import { useRouter } from "next/router";
 
 export function MainFooter() {
   const router = useRouter();
-  console.log(router.pathname);
   if (router.pathname == "/notes/[slug]") {
     return <BlogFooter />;
   } else {
