@@ -1,3 +1,4 @@
+import { MainFooter } from "./Footer";
 import { Nav } from "./Nav";
 
 export function Layout({ children }) {
@@ -7,6 +8,7 @@ export function Layout({ children }) {
         <div className="max-w-3xl mx-auto">
           <Nav />
           {children}
+          <MainFooter />
         </div>
       </div>
     </div>
