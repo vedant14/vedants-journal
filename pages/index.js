@@ -43,7 +43,7 @@ export default function Home() {
               My <Link href="/side-projects">side-projects</Link>
             </li>
             <li>
-              My <Link href="/proof-of-work">work</Link>
+              My <Link href="/tags/work">work</Link>
             </li>
             <li>
               Volunteered, taught, raised funds, recruited, sponsored and
