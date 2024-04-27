@@ -1,5 +1,25 @@
 [
   {
+    "name": "Smart Quick Look",
+    "state": "Active",
+    "link": "https://apps.shopify.com/smart-quick-look",
+    "whatItIs": "Shopify App",
+    "highlights": [
+      "Created a shopify app",
+      "Trying to increase downloads of this one"
+    ]
+  },
+  {
+    "name": "Pop Stor",
+    "state": "Active",
+    "link": "https://popstor.shop/",
+    "whatItIs": "Shopify App",
+    "highlights": [
+      "Trying to create a e-commerce version of LinkTree",
+      "Wish me luck"
+    ]
+  },
+  {
     "name": "Tiny Tea Kettle",
     "state": "Not active :(",
     "link": "https://tiny-tea-kettle.vercel.app/",
