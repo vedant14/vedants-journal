@@ -12,7 +12,7 @@ export function MainFooter() {
 }
 function BlogFooter() {
   return (
-    <FooterLayout text="thanks for reading :) ❤️">
+    <FooterLayout text="la fin :)">
       <Socials />
     </FooterLayout>
   );
