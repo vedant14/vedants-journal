@@ -3,6 +3,7 @@ import Link from "next/link";
 import React from "react";
 import { Divider } from "../components/Divider";
 import { SEO } from "../components/SEO";
+import Image from "next/image";
 export const metadata = {
   title: "Vedant Lohbare",
   description: "This is my personal site",
@@ -12,7 +13,13 @@ export default function Home() {
   return (
     <div>
       <SEO />
-      <Divider text="welcome" />
+      <Image
+        width={150}
+        height={30}
+        className="h-24 w-24 object-cover rounded-full mb-8"
+        src="/vedant.jpg"
+      />
+
       <div className="text-lg space-y-4">
         <p className="text-xl">Hey, my name is Vedant :)</p>
         <p>
