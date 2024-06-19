@@ -4,6 +4,7 @@ import { Divider, Dividerwithbutton } from "../components/Divider";
 import { SEO } from "../components/SEO";
 import { getPOWData } from "../utils/pow";
 import { classNames, findByRange } from "../utils/lib";
+import { Container } from "../components/Container";
 
 export default function POW({ powData }) {
   const [range, setRange] = useState(0);
@@ -64,34 +65,43 @@ export default function POW({ powData }) {
     );
   }
 
-  return (
-    <div>
-      <SEO title="Proof-of-work" />
-      <Dividerwithbutton
-        text="last updated Dec,2023"
-        buttonText="read updates on work"
-        url="tags/work"
-      />
-
-      <div className="relative my-16">
-        <input
-          id="labels-range-input"
-          type="range"
-          defaultValue={range}
-          disabled={true}
-          min="0"
-          max={MAX}
-          className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700"
+  function POWPAGE() {
+    return (
+      <Container>
+        <Dividerwithbutton
+          text="last updated Dec,2023"
+          buttonText="read updates on work"
+          url="tags/work"
         />
-        <div>
-          <SliderItem text="Start-up" number={0} />
-          <SliderItem text="Into PM" number={2} />
-          <SliderItem text="Joining Razorpay" number={5} />
-          <SliderItem text="Product leader" number={6.5} />
+
+        <div className="relative my-16">
+          <input
+            id="labels-range-input"
+            type="range"
+            defaultValue={range}
+            disabled={true}
+            min="0"
+            max={MAX}
+            className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700"
+          />
+          <div>
+            <SliderItem text="Start-up" number={0} />
+            <SliderItem text="Into PM" number={2} />
+            <SliderItem text="Joining Razorpay" number={5} />
+            <SliderItem text="Product leader" number={6.5} />
+          </div>
         </div>
-      </div>
-      <POWContent range={range} />
-    </div>
+        <POWContent range={range} />
+      </Container>
+    );
+  }
+  return (
+    <>
+      <SEO title="Proof-of-work" />
+      <Container>
+        <span className="line-through">Work</span> Page in progress
+      </Container>
+    </>
   );
 }
 

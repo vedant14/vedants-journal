@@ -1,16 +1,21 @@
 import { MainFooter } from "./Footer";
+import { Header } from "./Header";
 import { Nav } from "./Nav";
 
 export function Layout({ children }) {
   return (
-    <div className="bg-amber-50 min-h-screen">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 sm:py-12 py-16">
-        <div className="max-w-3xl mx-auto">
-          <Nav />
-          {children}
-          <MainFooter />
+    <>
+      <div className="fixed inset-0 flex justify-center sm:px-8 bg-gray-50">
+        <div className="flex w-full max-w-7xl lg:px-8">
+          <div className="w-full bg-white ring-1 ring-zinc-100 dark:bg-zinc-900 dark:ring-zinc-300/20" />
         </div>
       </div>
-    </div>
+      <div className="relative mb-20">
+        {/* <Nav /> */}
+        <Header />
+        {children}
+        {/* <MainFooter /> */}
+      </div>
+    </>
   );
 }

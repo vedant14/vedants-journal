@@ -1,10 +1,11 @@
+import { Container } from "../components/Container";
 import { Dividerwithbutton } from "../components/Divider";
 import { SEO } from "../components/SEO";
 import data from "../data/side-projects.json";
 
 export default function SideProjects() {
   return (
-    <div>
+    <Container>
       <SEO title="Side-Projects" />
       <Dividerwithbutton
         text="My Side Projects"
@@ -30,6 +31,6 @@ export default function SideProjects() {
           </li>
         ))}
       </ul>
-    </div>
+    </Container>
   );
 }

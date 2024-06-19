@@ -4,10 +4,11 @@ import { getNoteData } from "../../utils/notes";
 import { BlogTitle } from "../../components/BlogTitle";
 import { Divider } from "../../components/Divider";
 import { SEO } from "../../components/SEO";
+import { Container } from "../../components/Container";
 
 export default function Notes({ notes }) {
   return (
-    <div>
+    <Container>
       <SEO title="Notes" description="All my notes" />
       <Divider text="My notes" />
       <ul>
@@ -17,7 +18,7 @@ export default function Notes({ notes }) {
           </div>
         ))}
       </ul>
-    </div>
+    </Container>
   );
 }
 

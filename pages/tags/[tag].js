@@ -5,6 +5,7 @@ import { getNoteData } from "../../utils/notes";
 import { BlogTitle } from "../../components/BlogTitle";
 import { Dividerwithbutton } from "../../components/Divider";
 import { SEO } from "../../components/SEO";
+import { Container } from "../../components/Container";
 
 function NotesByTag({ notes }) {
   const router = useRouter();
@@ -14,20 +15,22 @@ function NotesByTag({ notes }) {
   }
 
   return (
-    <div>
+    <>
       <SEO title={`Notes with tag: ${tag}`} />
-      <Dividerwithbutton
-        text={`Notes with tag: ${tag}`}
-        buttonText="clear tag filter"
-      />
-      <ul>
-        {notes.map((note, i) => (
-          <div key={i}>
-            <BlogTitle note={note} />
-          </div>
-        ))}
-      </ul>
-    </div>
+      <Container>
+        <Dividerwithbutton
+          text={`Notes with tag: ${tag}`}
+          buttonText="clear tag filter"
+        />
+        <ul>
+          {notes.map((note, i) => (
+            <div key={i}>
+              <BlogTitle note={note} />
+            </div>
+          ))}
+        </ul>
+      </Container>
+    </>
   );
 }
 
