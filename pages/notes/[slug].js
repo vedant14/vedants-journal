@@ -5,18 +5,21 @@ import ReactMarkdown from "react-markdown";
 import { Dividerwithbutton } from "../../components/Divider";
 import { TagsAndDate } from "../../components/TagsAndDate";
 import { SEO } from "../../components/SEO";
+import { Container } from "../../components/Container";
 
 function Note({ note }) {
   return (
-    <div>
+    <>
       <SEO title={note.title} description={note.description} />
-      <p className="text-xl my-4 font-medium">{note.title}</p>
-      <TagsAndDate date={note.date} tagData={note.tag} />
-      <Dividerwithbutton />
-      <article className="prose">
-        <ReactMarkdown>{note.content}</ReactMarkdown>
-      </article>
-    </div>
+      <Container>
+        <p className="text-xl my-4 font-medium">{note.title}</p>
+        <TagsAndDate date={note.date} tagData={note.tag} />
+        <Dividerwithbutton />
+        <article className="prose">
+          <ReactMarkdown>{note.content}</ReactMarkdown>
+        </article>
+      </Container>
+    </>
   );
 }
 
