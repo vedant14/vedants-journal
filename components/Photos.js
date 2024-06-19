@@ -4,6 +4,7 @@ import image2 from "../public/photos/image-2.jpg";
 import image3 from "../public/photos/image-3.jpg";
 import image4 from "../public/photos/image-4.jpg";
 import image5 from "../public/photos/image-5.jpg";
+
 import { classNames } from "../utils/lib";
 
 export function Photos() {
@@ -16,13 +17,13 @@ export function Photos() {
   ];
 
   return (
-    <div className="mt-16 sm:mt-20">
+    <div className="my-16 sm:mt-20">
       <div className="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8">
         {[image1, image2, image3, image4, image5].map((image, imageIndex) => (
           <div
             key={image.src}
             className={classNames(
-              "relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl",
+              "relative aspect-[9/12] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 sm:w-72 sm:rounded-2xl",
               rotations[imageIndex % rotations.length]
             )}
           >

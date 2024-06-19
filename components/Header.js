@@ -148,7 +148,7 @@ function AvatarContainer({ className, ...props }) {
     <div
       className={classNames(
         className,
-        "h-10 w-10 rounded-full bg-white/90 p-0.5 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur"
+        "h-14 w-14 p-1 rounded-full bg-white/90 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur"
       )}
       {...props}
     />
@@ -166,10 +166,10 @@ function Avatar({ large = false, className, ...props }) {
       <Image
         src={avatarImage}
         alt=""
-        sizes={large ? "8rem" : "2.25rem"}
+        sizes={large ? "8rem" : "14.25rem"}
         className={classNames(
           "rounded-full bg-zinc-100 object-cover dark:bg-zinc-800",
-          large ? "h-24 w-24" : "h-9 w-9"
+          large ? "h-24 w-24" : "h-12 w-12"
         )}
         priority
       />
@@ -179,7 +179,7 @@ function Avatar({ large = false, className, ...props }) {
 
 export function Header() {
   return (
-    <div className="mb-16">
+    <div className="mb-16 mt-4">
       <header
         className="pointer-events-none relative z-50 flex flex-col"
         style={{
