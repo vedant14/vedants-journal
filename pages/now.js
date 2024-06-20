@@ -1,5 +1,6 @@
 import { Divider } from "../components/Divider";
 import { Container } from "../components/Container";
+
 export default function Sprints() {
   return (
     <Container>

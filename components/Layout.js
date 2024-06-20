@@ -1,6 +1,5 @@
 import { MainFooter } from "./Footer";
 import { Header } from "./Header";
-import { Nav } from "./Nav";
 
 export function Layout({ children }) {
   return (
@@ -11,10 +10,9 @@ export function Layout({ children }) {
         </div>
       </div>
       <div className="relative mb-20">
-        {/* <Nav /> */}
         <Header />
         {children}
-        {/* <MainFooter /> */}
+        <MainFooter />
       </div>
     </>
   );
