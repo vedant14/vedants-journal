@@ -6,6 +6,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        Kalam: ["Kalam", "cursive"],
+      },
       colors: {
         link: "#2563eb",
         amber: {

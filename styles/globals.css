@@ -14,3 +14,8 @@ ul.dashed > li:before {
   content: "- ";
   text-indent: -5px;
 }
+
+@font-face {
+  font-family: "Kalam";
+  src: url("../public/Kalam/Kalam-Regular.ttf");
+}

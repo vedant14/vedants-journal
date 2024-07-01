@@ -3,8 +3,9 @@
     "name": "Hola - Customer Contact App",
     "state": "Active",
     "link": "https://apps.shopify.com/hola-customer-contact-app",
-    "whatItIs": "Shopify App",
+    "whatItIs": "A shopify app that let's merchants manually contact abandoned carts and COD customers",
     "highlights": [
+      "40 installs already, super proud:)",
       "Working with a partner for the second time after Super DMs",
       "It will help merchants message, whatsapp, call for order confirmations, abandoned-carts or review requests."
     ]
@@ -13,9 +14,9 @@
     "name": "Smart Quick Look",
     "state": "Active",
     "link": "https://apps.shopify.com/smart-quick-look",
-    "whatItIs": "Shopify App",
+    "whatItIs": "A shopify app that adds a simple carousel to your shopify site",
     "highlights": [
-      "Created a shopify app",
+      "My first shopify app",
       "Trying to increase downloads of this one"
     ]
   },
@@ -23,11 +24,8 @@
     "name": "Pop Stor",
     "state": "Active",
     "link": "https://popstor.shop/",
-    "whatItIs": "Shopify App",
-    "highlights": [
-      "Trying to create a e-commerce version of LinkTree",
-      "Wish me luck"
-    ]
+    "whatItIs": "A shopify app that lets you create a e-commerce version of LinkTree",
+    "highlights": ["Wish me luck"]
   },
   {
     "name": "Tiny Tea Kettle",
