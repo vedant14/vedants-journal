@@ -1,6 +1,6 @@
 ---
 title: Why not be a product manager
-date: 2021-08-01
+date: 2021/8/1
 slug: pm-rant-1
 description: I hope this does not read like a rant.
 tag: product-management, work

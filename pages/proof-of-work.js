@@ -82,7 +82,7 @@ export default function POW({ powData }) {
             disabled={true}
             min="0"
             max={MAX}
-            className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700"
+            className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer"
           />
           <div>
             <SliderItem text="Start-up" number={0} />
