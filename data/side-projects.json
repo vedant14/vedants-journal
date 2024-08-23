@@ -70,7 +70,7 @@
   {
     "name": "Particypants",
     "state": "Not active",
-    "link": "https://www.particypants.com/",
+    "link": "https://slack-meetings.netlify.app",
     "whatItIs": "Slack application that helps teams take meeting notes.",
     "highlights": [
       "First tech intensive product, played with Slack APIs and learned a lot about them in the process",
