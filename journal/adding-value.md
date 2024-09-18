@@ -57,7 +57,7 @@ My calendar is now filled with two colours.
 1. Purple - Time spent on enabling/removing blockers
 2. Orange - Tasks I had planned to create a product.
 
-![Calendar](../images/Calendar.png)
+![Calendar](/blog-images/calendar.png)
 
 ### What will I do with the data?
 
