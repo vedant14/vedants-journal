@@ -9,13 +9,13 @@ tag: writing
 Sorry for the slightly click-bait-y title.
 
 This story started a few months ago with this tweet -
-![The question](../images/austens-question.png)
+![The question](/blog-images/austens-question.png)
 
 I asked the following question on our Inverted Passion slack group.
 
 [Inverted Passion](https://invertedpassion.com) is a community created by Paras Chopra. The slack channel is usually buzzing with the questions, mentioned in the tweet above. I also like reading the mental models shared by Paras, have been reading them for more than a couple of years I think.
 
-![Paras’s Reply](../images/Paras_reply.png)
+![Paras’s Reply](/blog-images/paras_reply.png)
 
 ### Writing is thinking.
 
