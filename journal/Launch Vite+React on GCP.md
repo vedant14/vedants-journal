@@ -5,6 +5,8 @@ tags: tech
 description: I struggled a lot with this particular deployment, hence adding it here for my own future reference
 slug: hosting-react-router-on-GCP
 ---  
+
+I struggled a lot with this particular deployment, hence adding it here for my own future reference
 ## Setting up GCP
 - Create a GCP instance. I am creating a e2 micro
 - Allow HTTPS / HTTP.
