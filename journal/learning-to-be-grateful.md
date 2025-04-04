@@ -2,7 +2,7 @@
 title: Learning to be gratefull
 date: 2022/11/30
 description: I know I sound old. Like everyone else, I hate to be old and wise.
-tag: mental-model, rants
+tag: mental-model, journal/rants
 slug: learning-to-be-grateful
 ---
 
