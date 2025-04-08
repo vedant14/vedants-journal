@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { BackIcon } from "./SocialIcons";
 
 export function Divider({ text }) {
   return (
@@ -28,10 +29,17 @@ export function Dividerwithbutton({ text, url, buttonText }) {
         <Link href={url ? url : "/notes"}>
           <button
             type="button"
-            className="inline-flex items-center shadow-sm px-4 py-1.5 border border-gray-300 text-sm leading-5 rounded-full text-gray-700 bg-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-zinc-500"
+            className="inline-flex items-center shadow-sm px-4 py-1.5 border border-zinc-300 text-sm leading-5 rounded-full bg-white text-sm text-zinc-500 hover:text-zinc-600 stroke-zinc-500 hover:stroke-zinc-600 hover:border-zinc-400"
           >
-            <span className="bg-white text-sm text-gray-500">
-              {buttonText ? buttonText : "< back"}
+            <span>
+              {buttonText ? (
+                <span>{buttonText}</span>
+              ) : (
+                <div className="flex items-center">
+                  <BackIcon className="fill-none stroke-2 h-5" />
+                  <span className="">back</span>
+                </div>
+              )}
             </span>
           </button>
         </Link>

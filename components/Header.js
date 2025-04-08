@@ -168,7 +168,7 @@ function Avatar({ large = false, className, ...props }) {
         alt=""
         sizes={large ? "8rem" : "14.25rem"}
         className={classNames(
-          "rounded-full bg-zinc-100 object-cover",
+          "rounded-full bg-zinc-100 object-cover hover:shadow-lg",
           large ? "h-24 w-24" : "h-12 w-12"
         )}
         priority

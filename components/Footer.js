@@ -15,7 +15,7 @@ export function MainFooter() {
 }
 function BlogFooter() {
   return (
-    <FooterLayout text="la fin :)">
+    <FooterLayout text="शेवट :)">
       <SocialLinks />
     </FooterLayout>
   );

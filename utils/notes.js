@@ -15,7 +15,10 @@ export function getNoteData(tag = null) {
       const fileContents = fs.readFileSync(fullPath, "utf8");
       const matterResult = matter(fileContents);
 
-      // Serialize the date property to a string
+      if (matterResult.data.date === undefined) {
+        return null;
+      }
+
       return {
         fileName,
         ...matterResult.data,
@@ -23,15 +26,15 @@ export function getNoteData(tag = null) {
         content: matterResult.content,
       };
     })
-    .filter((note) => note.date && note.title && note.slug)
+    .filter((note) => note && note.date && note.title && note.slug)
     .sort((a, b) => new Date(b.date) - new Date(a.date));
 
   if (tag) {
     return notesData.filter((note) => {
       const tags = note.tag;
-
       return (
-        (Array.isArray(tags) && tags.includes(tag.toLowerCase())) ||
+        (Array.isArray(tags) &&
+          tags.map((t) => t.toLowerCase()).includes(tag.toLowerCase())) ||
         (typeof tags === "string" &&
           tags
             .split(",")
@@ -41,6 +44,5 @@ export function getNoteData(tag = null) {
     });
   }
 
-  // Convert date to string before returning
-  return JSON.parse(JSON.stringify(notesData));
+  return JSON.parse(JSON.stringify(notesData)); // To ensure date is serialized
 }
