@@ -49,42 +49,29 @@ export default function Home() {
                 className="text-gray-500 space-y-4 list-none dashed"
               >
                 <li>
-                  My <Link href="/side-projects">side-projects</Link>
+                  My{" "}
+                  <Link href="/side-projects" className="text-rred">
+                    side-projects
+                  </Link>
                 </li>
                 <li>
-                  My <Link href="/tags/work">work</Link>
+                  My{" "}
+                  <Link href="/tags/work" className="text-ppurple">
+                    work
+                  </Link>
                 </li>
                 <li>
                   Volunteered, taught, raised funds, recruited, sponsored and
                   pretty-much did everything I could for under-privileged
                   children at{" "}
-                  <a href="https://makeadiff.in/" target="_blank">
-                    {" "}
+                  <a
+                    href="https://makeadiff.in/"
+                    target="_blank"
+                    className="text-yyellow"
+                  >
                     Make a Difference{" "}
-                  </a>{" "}
+                  </a>
                   for 4 years.
-                </li>
-              </ul>
-            </div>
-          </div>
-          <Divider text="quick links " />
-          <div>
-            <div className="sec-text">
-              <ul
-                role="list"
-                className="text-gray-500 space-y-4 list-none dashed"
-              >
-                <li>
-                  Notes on <Link href="/tags/writing">writings</Link>
-                </li>
-                <li>
-                  Notes on <Link href="/tags/work">work</Link>
-                </li>
-                <li>
-                  Notes on <Link href="/tags/side-projects">side-projects</Link>
-                </li>
-                <li>
-                  <Link href="/tags/rants">Rants</Link> are here
                 </li>
               </ul>
             </div>
