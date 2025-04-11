@@ -1,115 +1,121 @@
-import { useState } from "react";
-import ReactMarkdown from "react-markdown";
-import { Divider, Dividerwithbutton } from "../components/Divider";
-import { SEO } from "../components/SEO";
-import { getPOWData } from "../utils/pow";
-import { classNames, findByRange } from "../utils/lib";
-import { Container } from "../components/Container";
+"use client";
 
-export default function POW({ powData }) {
-  const [range, setRange] = useState(0);
-  const MAX = 8;
+import { motion, useScroll, useSpring, useTransform } from "motion/react";
+import { useRef } from "react";
+import { Header } from "../components/Header";
 
-  function SliderItem({ number, text }) {
-    return (
-      <span onClick={() => setRange(number)}>
-        <span
-          className={classNames(
-            range == number ? `ease-in text-gray-900` : `text-gray-500`,
-            `text-sm  absolute bottom-6 cursor-pointer`
-          )}
-          style={{
-            insetInlineStart: `calc(${(number / MAX) * 100}% - 20px)`,
-          }}
-        >
-          {number} years
-        </span>
-        <span
-          className={classNames(
-            range == number ? `hidden` : `text-gray-500`,
-            `text-sm  absolute bottom-0 cursor-pointer`
-          )}
-          style={{
-            insetInlineStart: `calc(${(number / MAX) * 100}%)`,
-          }}
-        >
-          |
-        </span>
-        <span
-          className={classNames(
-            range == number
-              ? `underline ease-in text-gray-900`
-              : `text-gray-500`,
-            `text-sm  absolute -bottom-6 cursor-pointer`
-          )}
-          style={{
-            insetInlineStart: `calc(${(number / MAX) * 100}% - 20px)`,
-          }}
-        >
-          {text}
-        </span>
-      </span>
-    );
-  }
+function useParallax(value, distance) {
+  return useTransform(value, [0, 1], [-distance, distance]);
+}
+function Image({ item }) {
+  const ref = useRef(null);
+  const { scrollYProgress } = useScroll({ target: ref });
+  const y = useParallax(scrollYProgress, 300);
 
-  function POWContent({ range }) {
-    const content = findByRange(powData, range);
-    if (!content) return null;
-    return (
-      <div>
-        <Divider text={content.title} />
-        <article className="prose">
-          <ReactMarkdown>{content.content}</ReactMarkdown>
-        </article>
-      </div>
-    );
-  }
-
-  function POWPAGE() {
-    return (
-      <Container>
-        <Dividerwithbutton
-          text="last updated Dec,2023"
-          buttonText="read updates on work"
-          url="tags/work"
-        />
-
-        <div className="relative my-16">
-          <input
-            id="labels-range-input"
-            type="range"
-            defaultValue={range}
-            disabled={true}
-            min="0"
-            max={MAX}
-            className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer"
-          />
-          <div>
-            <SliderItem text="Start-up" number={0} />
-            <SliderItem text="Into PM" number={2} />
-            <SliderItem text="Joining Razorpay" number={5} />
-            <SliderItem text="Product leader" number={6.5} />
-          </div>
-        </div>
-        <POWContent range={range} />
-      </Container>
-    );
-  }
   return (
-    <>
-      <SEO title="Proof-of-work" />
-      <Container>
-        <span className="line-through">Work</span> Page in progress
-      </Container>
-    </>
+    <section className="h-screen snap-start flex justify-center items-center relative">
+      <div ref={ref} className="m-5 bg-gray-100 overflow-hidden">
+        <img
+          className="w-[300px] md:w-[700px] h-[400px] rounded-md"
+          src={item.image}
+          alt={item.title}
+        />
+      </div>
+      <motion.div
+        initial={{ visibility: "hidden" }}
+        animate={{ visibility: "visible" }}
+        style={{ y }}
+        className="absolute top-[calc(50%-120px)] md:top-1/2 left-[calc(50%-10px)] md:left-[calc(50%+60px)] block"
+      >
+        <h2 className="inline-block m-0 font-mono font-azaret text-[#4ff0b7] text-5xl font-bold tracking-[-3px] leading-[1.2] w-full">
+          {item.title}
+        </h2>
+        <p className="inline-block m-0 w-48 md:w-[500px] font-mono font-azaret tracking-[-3px] leading-[1.2]">
+          {item.content}
+        </p>
+      </motion.div>
+    </section>
   );
 }
 
-export async function getStaticProps() {
-  const powData = getPOWData();
-  return {
-    props: {
-      powData,
+export default function Parallax() {
+  const { scrollYProgress } = useScroll();
+  const xRaw = useTransform(scrollYProgress, [0, 1], ["10%", "90%"]);
+  const x = useSpring(xRaw, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001,
+  });
+
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001,
+  });
+
+  const imageData = [
+    {
+      id: 1,
+      year: 2020,
+      image: "/photos/cityscape/1.jpg",
+      title: "#001",
+      content:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     },
-  };
+    {
+      id: 2,
+      year: 2021,
+      image: "/photos/cityscape/2.jpg",
+      title: "#002",
+      content:
+        "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    },
+    {
+      id: 3,
+      year: 2022,
+      image: "/photos/cityscape/3.jpg",
+      title: "#003",
+      content:
+        "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    },
+    {
+      id: 4,
+      year: 2023,
+      image: "/photos/cityscape/4.jpg",
+      title: "#004",
+      content:
+        "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    },
+    {
+      id: 5,
+      year: 2024,
+      image: "/photos/cityscape/5.jpg",
+      title: "#005",
+      content:
+        "Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+    },
+  ];
+
+  return (
+    <>
+      <Header fixed={true} />
+      <div>
+        {imageData.map((item) => (
+          <Image key={item.id} item={item} />
+        ))}
+        <div className="flex fixed left-0 right-0 bottom-[50px] bg-gray-50 h-8 items-center">
+          {/* <motion.div
+            className="h-2 rounded bg-[#4ff0b7] fixed left-0 right-0"
+            style={{ scaleX, transformOrigin: "left" }}
+          /> */}
+          <motion.div
+            style={{ x }}
+            className="relative ml-2 font-mono text-sm text-black w-full"
+          >
+            Move
+          </motion.div>
+        </div>
+      </div>
+    </>
+  );
 }
