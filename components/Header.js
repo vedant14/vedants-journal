@@ -91,9 +91,7 @@ function MobileNavigation(props) {
               <PopoverButton aria-label="Close menu" className="-m-1 p-1">
                 <CloseIcon className="h-6 w-6 text-zinc-500" />
               </PopoverButton>
-              <h2 className="text-sm font-medium text-zinc-600">
-                Navigation
-              </h2>
+              <h2 className="text-sm font-medium text-zinc-600">Navigation</h2>
             </div>
             <nav className="mt-6">
               <ul className="-my-2 divide-y divide-zinc-100 text-base text-zinc-800">
@@ -177,9 +175,9 @@ function Avatar({ large = false, className, ...props }) {
   );
 }
 
-export function Header() {
+export function Header({ fixed = false }) {
   return (
-    <div className="mb-16 mt-4">
+    <div className={classNames(fixed ? "fixed top-0 w-full z-[100] bg-white pt-4" : "mb-16 mt-4")}>
       <header
         className="pointer-events-none relative z-50 flex flex-col"
         style={{

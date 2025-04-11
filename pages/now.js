@@ -5,6 +5,7 @@ import ReactMarkdown from "react-markdown";
 import { Divider } from "../components/Divider";
 import { Container } from "../components/Container";
 import { formatDate } from "../utils/lib";
+import { Layout } from "../components/Layout";
 
 export async function getStaticProps() {
   const filePath = path.join(process.cwd(), "data", "now.md");
@@ -20,12 +21,14 @@ export async function getStaticProps() {
 
 export default function Sprints({ content, date }) {
   return (
-    <Container>
-      <h1 className="text-4xl font-bold tracking-tight leading-[50px] text-zinc-800 sm:text-5xl">
-        What am I focusing on now?
-      </h1>
-      <Divider text={`last updated: ${date}`} />
-      <ReactMarkdown className="prose">{content}</ReactMarkdown>
-    </Container>
+    <Layout>
+      <Container>
+        <h1 className="text-4xl font-bold tracking-tight leading-[50px] text-zinc-800 sm:text-5xl">
+          What am I focusing on now?
+        </h1>
+        <Divider text={`last updated: ${date}`} />
+        <ReactMarkdown className="prose">{content}</ReactMarkdown>
+      </Container>
+    </Layout>
   );
 }

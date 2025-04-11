@@ -1,8 +1,27 @@
-import { format } from "date-fns";
-
 export function formatDate(inputDate) {
   if (inputDate instanceof Date) {
-    return format(inputDate, "EEE d MMM, yyyy");
+    const daysOfWeek = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+    const months = [
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
+      "May",
+      "Jun",
+      "Jul",
+      "Aug",
+      "Sep",
+      "Oct",
+      "Nov",
+      "Dec",
+    ];
+
+    const dayOfWeek = daysOfWeek[inputDate.getDay()];
+    const day = inputDate.getDate();
+    const month = months[inputDate.getMonth()];
+    const year = inputDate.getFullYear();
+
+    return `${dayOfWeek} ${day} ${month}, ${year}`;
   } else {
     console.log("Invalid date.", inputDate);
     return null;

@@ -6,10 +6,11 @@ import { Dividerwithbutton } from "../../components/Divider";
 import { TagsAndDate } from "../../components/TagsAndDate";
 import { SEO } from "../../components/SEO";
 import { Container } from "../../components/Container";
+import { Layout } from "../../components/Layout";
 
 function Note({ note }) {
   return (
-    <>
+    <Layout>
       <SEO title={note.title} description={note.description} />
       <Container>
         <p className="text-xl my-4 font-medium">{note.title}</p>
@@ -19,7 +20,7 @@ function Note({ note }) {
           <ReactMarkdown>{note.content}</ReactMarkdown>
         </article>
       </Container>
-    </>
+    </Layout>
   );
 }
 

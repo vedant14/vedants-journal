@@ -5,20 +5,23 @@ import { BlogTitle } from "../../components/BlogTitle";
 import { Divider } from "../../components/Divider";
 import { SEO } from "../../components/SEO";
 import { Container } from "../../components/Container";
+import { Layout } from "../../components/Layout";
 
 export default function Notes({ notes }) {
   return (
-    <Container>
-      <SEO title="Notes" description="All my notes" />
-      <Divider text="My notes" />
-      <ul>
-        {notes.map((note, i) => (
-          <div key={i}>
-            <BlogTitle note={note} />
-          </div>
-        ))}
-      </ul>
-    </Container>
+    <Layout>
+      <Container>
+        <SEO title="Notes" description="All my notes" />
+        <Divider text="My notes" />
+        <ul>
+          {notes.map((note, i) => (
+            <div key={i}>
+              <BlogTitle note={note} />
+            </div>
+          ))}
+        </ul>
+      </Container>
+    </Layout>
   );
 }
 

@@ -6,6 +6,7 @@ import { SEO } from "../components/SEO";
 import { Container } from "../components/Container";
 import { Photos } from "../components/Photos";
 import { SocialLinks } from "../components/SocialLinks";
+import { Layout } from "../components/Layout";
 
 export const metadata = {
   title: "Vedant Lohbare",
@@ -14,7 +15,7 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <>
+    <Layout>
       <SEO />
       <Container className="mt-9">
         <div className="max-w-2xl">
@@ -78,6 +79,6 @@ export default function Home() {
           </div>
         </div>
       </Container>
-    </>
+    </Layout>
   );
 }

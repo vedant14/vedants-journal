@@ -1,6 +1,13 @@
-import { format } from "date-fns";
 const EXTERNAL_DATA_URL = "https://www.vedantlohbare.com/notes";
 const API_DATA_URL = "https://www.vedantlohbare.com/api/get-notes";
+
+function formatDateForSitemap(date) {
+  const year = date.getFullYear();
+  const month = String(date.getMonth() + 1).padStart(2, "0"); // Months are 0-indexed
+  const day = String(date.getDate()).padStart(2, "0");
+  return `${year}-${month}-${day}`;
+}
+
 function generateSiteMap(posts) {
   const manualURLs = [
     "https://www.vedantlohbare.com",
@@ -9,6 +16,8 @@ function generateSiteMap(posts) {
   ];
   const postURLs = posts.map((slug) => `${EXTERNAL_DATA_URL}/${slug}`);
   const allURLs = [...manualURLs, ...postURLs];
+  const today = new Date();
+
   return `<?xml version="1.0" encoding="UTF-8"?>
   <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     ${allURLs
@@ -16,7 +25,7 @@ function generateSiteMap(posts) {
         return `
      <url>
        <loc>${url}</loc>
-       <lastmod>${format(new Date(), "yyyy-MM-dd")}</lastmod>
+       <lastmod>${formatDateForSitemap(today)}</lastmod>
      </url>
    `;
       })
