@@ -5,6 +5,13 @@ import { SEO } from "../components/SEO";
 import data from "../data/side-projects.json";
 import { classNames } from "../utils/lib";
 
+const color = [
+  "text-rred",
+  "text-ggreen",
+  "text-ppurple",
+  "text-bblue",
+  "text-yyellow",
+];
 export default function SideProjects() {
   return (
     <Layout>
@@ -19,7 +26,7 @@ export default function SideProjects() {
           {data.map((item, i) => (
             <li key={i}>
               <div className="mb-2 space-x-2 flex items-center">
-                <a href={item.link} target="_blank">
+                <a href={item.link} target="_blank" className={`${color[Math.floor(Math.random() * 5)]}`}>
                   # {item.name}
                 </a>
                 <span
@@ -32,7 +39,6 @@ export default function SideProjects() {
               </div>
               <ul className="text-zinc-600 space-y-2 list-none dashed">
                 <li className="text-gray-600">
-                  What is it?
                   {item.whatItIs}
                 </li>
                 {item?.highlights?.map((highlight, i) => (

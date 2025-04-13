@@ -1,7 +1,6 @@
 import { TagPill } from "./TagPill";
 
 export function TagsAndDate({ date, tagData }) {
-
   const tagsArray = tagData?.split(",");
   return (
     <div className="sm:flex sm:space-x-2 items-center my-6 sm:my-0">

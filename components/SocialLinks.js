@@ -1,7 +1,18 @@
 import Link from "next/link";
 import { socialLinks } from "./SocialIcons";
 
-const color = ["fill-rred", "fill-ggreen", "fill-ppurple", "fill-bblue", "fill-yyellow"];
+const color = [
+  "fill-rred",
+  "fill-ggreen",
+  "fill-ppurple",
+  "fill-bblue",
+  "fill-yyellow",
+  "text-rred",
+  "text-ggreen",
+  "text-ppurple",
+  "text-bblue",
+  "text-yyellow",
+];
 export function SocialLinks() {
   return (
     <div className="mt-6 flex gap-6">
@@ -13,9 +24,7 @@ export function SocialLinks() {
           target="_blank"
           aria-label={socialLink.name}
         >
-          <socialLink.icon
-            className={`h-6 w-6 transition ${color[i]}`}
-          />
+          <socialLink.icon className={`h-6 w-6 transition ${color[i]}`} />
         </Link>
       ))}
     </div>

@@ -1,18 +1,43 @@
 [
   {
+    "name": "Calee",
+    "state": "Earning $",
+    "link": "https://apps.shopify.com/cali-event-calendar",
+    "whatItIs": "A shopify app that shows events on the merchants store",
+    "highlights": ["Pays for my coffee every month, which ain't cheap:)"]
+  },
+  {
+    "name": "Finance App for our home",
+    "state": "Always in progress",
+    "link": "https://www.vedantlohbare.com/notes/app-to-track-my-expenses",
+    "whatItIs": "A personal app that I created to automatically track and categoriese wife and my incomes and expenses",
+    "highlights": [
+      "Learned a bunch of new things",
+      "React router and how to host an app on an actual server",
+      "Using AI to categorise expenses",
+      "I also want to learn creating a PWA, using NFCs for goal tracking and a few other things"
+    ]
+  },
+  {
+    "name": "E-ink Display",
+    "state": "In-Progress",
+    "whatItIs": "A personal task + calendar manager on an e-ink screen",
+    "highlights": ["Will post updates soon, super excited for this"]
+  },
+  {
     "name": "Hola - Customer Contact App",
-    "state": "Active",
+    "state": "Not active :(",
     "link": "https://apps.shopify.com/hola-customer-contact-app",
     "whatItIs": "A shopify app that let's merchants manually contact abandoned carts and COD customers",
     "highlights": [
-      "40 installs already, super proud:)",
+      "50+ installs, super proud:)",
       "Working with a partner for the second time after Super DMs",
       "It will help merchants message, whatsapp, call for order confirmations, abandoned-carts or review requests."
     ]
   },
   {
     "name": "Smart Quick Look",
-    "state": "Active",
+    "state": "Not active :(",
     "link": "https://apps.shopify.com/smart-quick-look",
     "whatItIs": "A shopify app that adds a simple carousel to your shopify site",
     "highlights": [
@@ -22,7 +47,7 @@
   },
   {
     "name": "Pop Stor",
-    "state": "Active",
+    "state": "Not active :(",
     "link": "https://popstor.shop/",
     "whatItIs": "A shopify app that lets you create a e-commerce version of LinkTree",
     "highlights": ["Wish me luck"]
