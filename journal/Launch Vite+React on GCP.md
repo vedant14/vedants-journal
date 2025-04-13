@@ -1,7 +1,7 @@
 ---
 title: Hosting a react-router application on GCP
 date: 2025-04-34
-tags: tech
+tag: tech
 description: I struggled a lot with this particular deployment, hence adding it here for my own future reference
 slug: hosting-react-router-on-GCP
 ---  

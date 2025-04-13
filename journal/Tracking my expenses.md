@@ -2,7 +2,7 @@
 title: The app I created to track my expenses
 date: 2023-12-06
 description: Using google mail, zapier and google sheets
-tags: side-projects
+tag: side-projects
 slug: app-to-track-my-expenses
 ---
 

@@ -2,7 +2,7 @@
 title: Wrong loudly, than being right silently
 date: 2024-05-12
 description: Biggest lesson I learned inside Razorpay
-tags: work
+tag: work
 slug: wrong-loudly-than-being-right-silently
 ---
 

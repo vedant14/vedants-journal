@@ -2,7 +2,6 @@
 title: My Decade Resolution
 date: 2020-02-29
 description: Where was I 10 years ago?
-tags: []
 slug: decade-resolution
 ---
 

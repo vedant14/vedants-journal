@@ -13,7 +13,7 @@ function Note({ note }) {
     <Layout>
       <SEO title={note.title} description={note.description} />
       <Container>
-        <p className="text-xl my-4 font-medium">{note.title}</p>
+        <p className="text-xl mb-2 font-medium">{note.title}</p>
         <TagsAndDate date={note.date} tagData={note.tag} />
         <Dividerwithbutton />
         <article className="prose">
