@@ -4,7 +4,7 @@ date: 2025-04-09
 
 ### Reading
 
-- [Anxious People](https://www.goodreads.com/book/show/49127718-anxious-people)
+- [Table for Two](https://www.google.com/search?client=safari&rls=en&q=table+for+two&ie=UTF-8&oe=UTF-8) 
 - [In Search Of Schrodinger's Cat](https://www.goodreads.com/book/show/513367.In_Search_of_Schr_dinger_s_Cat)
 
 ### Side-Projects
