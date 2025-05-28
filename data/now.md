@@ -1,10 +1,10 @@
 ---
-date: 2025-04-09
+date: 2025-05-28
 ---
 
 ### Reading
 
-- [Table for Two](https://www.google.com/search?client=safari&rls=en&q=table+for+two&ie=UTF-8&oe=UTF-8) 
+- [Lady Joker Vol. One](https://www.goodreads.com/book/show/56572078-lady-joker-volume-one) 
 - [In Search Of Schrodinger's Cat](https://www.goodreads.com/book/show/513367.In_Search_of_Schr_dinger_s_Cat)
 
 ### Side-Projects
