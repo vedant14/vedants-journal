@@ -26,12 +26,16 @@ export default function Home() {
           <p className="mt-8 text-base font-light text-zinc-500 leading-[30px]">
             Hey, I’m Vedant Lohbare.
             <br /> 💻 I currently work with the{" "}
-            <span className="font-bold">amazing</span> product team at RazorpayX
+            <span className="font-bold">amazing</span> product team at Jise
             Capital.
-            <br /> 💭 Most of my time, I spend day-dreaming about scaling my
-            many <Link href="/side-projects">side-projects</Link>.
+            <br /> 💭 Some time, I wonder ways to scale my many{" "}
+            <Link href="/side-projects">side-projects</Link>.
             <br />
-            📙 I love to read - These days I prefer reading fiction.
+            📙 I{" "}
+            <Link href="https://www.goodreads.com/user/show/80750798-vedant">
+              love to read
+            </Link>{" "}
+            - These days I prefer reading fiction.
             <br />
             🖌️ You may sometimes find me paint or{" "}
             <Link href="/notes"> write stuff</Link> online
