@@ -26,8 +26,7 @@ export default function Home() {
           <p className="mt-8 text-base font-light text-zinc-500 leading-[30px]">
             Hey, I’m Vedant Lohbare.
             <br /> 💻 I currently work with the{" "}
-            <span className="font-bold">amazing</span> product team at Jise
-            Capital.
+            <span className="font-bold">amazing</span> product team at Jisr.
             <br /> 💭 Some time, I wonder ways to scale my many{" "}
             <Link href="/side-projects">side-projects</Link>.
             <br />
