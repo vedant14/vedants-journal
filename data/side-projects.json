@@ -4,7 +4,21 @@
     "state": "Earning $",
     "link": "https://apps.shopify.com/cali-event-calendar",
     "whatItIs": "A shopify app that shows events on the merchants store",
-    "highlights": ["Pays for my coffee every month, which ain't cheap:)"]
+    "highlights": ["Pays for my rent every month now:)"]
+  },
+  {
+    "name": "Hire Easy",
+    "state": "Active Users",
+    "link": "https://apps.shopify.com/hire-easy-career-pages",
+    "whatItIs": "A shopify app that allows stores to create a jobs page",
+    "highlights": ["Solo project, loving the feedback:)", "Lots of work to do"]
+  },
+  {
+    "name": "Fancy Clock - Because why not",
+    "state": "active",
+    "link": "https://clock-react-fawn.vercel.app/",
+    "whatItIs": "Wanted to see if I can still code without AI's help",
+    "highlights": ["Learned that I can still code without AI :P"]
   },
   {
     "name": "Finance App for our home",

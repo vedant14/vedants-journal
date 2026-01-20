@@ -1,5 +1,5 @@
 ---
-title: Be lose with appreciations
+title: Be loose with appreciations
 date: 2021-04-29
 description: I find it difficult sometimes to appreciate people in a workplace for a personal priority.
 tag: product-management
