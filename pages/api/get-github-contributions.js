@@ -3,7 +3,6 @@ export default async function handler(req, res) {
   const username = "vedant14";
   const token = process.env.GITHUB_TOKEN; // optional, falls back to public data
 
-  // Use GitHub GraphQL API for contribution data
   const query = `
     query {
       user(login: "${username}") {
@@ -41,19 +40,20 @@ export default async function handler(req, res) {
     }
 
     const data = await response.json();
-    
+
     if (data.errors) {
       throw new Error(data.errors[0].message);
     }
 
-    const calendar = data.data.user.contributionsCollection.contributionCalendar;
-    
+    const calendar =
+      data.data.user.contributionsCollection.contributionCalendar;
+
     // Flatten weeks into array of { date, count }
-    const contributions = calendar.weeks.flatMap(week =>
-      week.contributionDays.map(day => ({
+    const contributions = calendar.weeks.flatMap((week) =>
+      week.contributionDays.map((day) => ({
         date: day.date,
         count: day.contributionCount,
-      }))
+      })),
     );
 
     res.status(200).json({

@@ -19,16 +19,16 @@ export default function Home() {
     <Layout>
       <SEO />
       <Container className="mt-9">
-        <div className="max-w-2xl">
+        <div className="max-w-4xl">
           <h1 className="text-4xl font-bold tracking-tight leading-[50px] text-zinc-800 sm:text-5xl">
-            <span className="line-through">cyclist,</span> product manager &
-            part-time side-project ship-er
+            Parkour athlete, product manager & part-time{" "}
+            <span className="line-through">side</span> serious project ship-er
           </h1>
           <p className="mt-8 text-base font-light text-zinc-500 leading-[30px]">
             Hey, I’m Vedant Lohbare.
             <br /> 💻 I currently work with the{" "}
             <span className="font-bold">amazing</span> product team at Jisr.
-            <br /> 💭 Some time, I wonder ways to scale my many{" "}
+            <br /> 💭 Sometimes, I am figuring out ways to scale my many{" "}
             <Link href="/side-projects">side-projects</Link>.
             <br />
             📙 I{" "}
