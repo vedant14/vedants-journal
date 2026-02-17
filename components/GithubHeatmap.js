@@ -66,28 +66,35 @@ export function GithubHeatmap() {
           endDate={endDate}
           values={data}
           classForValue={(value) => {
-            if (!value || value.count === 0) return "color-empty";
-            if (value.count <= 2) return "color-scale-1";
-            if (value.count <= 5) return "color-scale-2";
-            if (value.count <= 9) return "color-scale-3";
+            const count = value?.count || 0;
+            if (count === 0) return "color-empty";
+            if (count <= 2) return "color-scale-1";
+            if (count <= 5) return "color-scale-2";
+            if (count <= 9) return "color-scale-3";
             return "color-scale-4";
           }}
           onMouseOver={(event, value) => {
             if (!value?.date) return;
-            let content = `${value.count} commits on ${formatDate(value.date)}`;
-            if (value.count === 0) {
-              content = `Vedant was touching grass on ${formatDate(value.date)}`;
-            }
+
+            const count = value.count || 0;
+            const date = formatDate(value.date);
+
+            let content =
+              count === 0
+                ? `Vedant was touching grass on ${date}`
+                : `${count} commit${count > 1 ? "s" : ""} on ${date}`;
+
             setTooltip({
               x: event.clientX,
               y: event.clientY,
-              content: content,
+              content,
             });
           }}
           onMouseLeave={() => setTooltip(null)}
           showWeekdayLabels={false}
         />
       </div>
+
       {tooltip && (
         <div
           className="fixed z-50 px-3 py-1.5 text-xs text-white bg-zinc-900 rounded-md shadow-lg pointer-events-none transition-opacity duration-150"
