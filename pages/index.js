@@ -6,6 +6,7 @@ import { SEO } from "../components/SEO";
 import { Container } from "../components/Container";
 import { Photos } from "../components/Photos";
 import { SocialLinks } from "../components/SocialLinks";
+import { GithubHeatmap } from "../components/GithubHeatmap";
 import { Layout } from "../components/Layout";
 
 export const metadata = {
@@ -40,6 +41,7 @@ export default function Home() {
             <Link href="/notes"> write stuff</Link> online
           </p>
           <SocialLinks />
+          <GithubHeatmap />
         </div>
       </Container>
       <Photos />
